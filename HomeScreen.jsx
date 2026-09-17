@@ -4,7 +4,7 @@ function BadgeDialog({ chapter, onClose }) {
   return (
     <div onClick={onClose} style={{ position:'fixed', inset:0, background:'rgba(42,30,26,0.5)', display:'flex', alignItems:'center', justifyContent:'center', zIndex:100, padding:24 }}>
       <div onClick={e => e.stopPropagation()} style={{ background:'var(--color-surface)', borderRadius:'var(--radius-xl)', padding:'28px 24px', maxWidth:320, width:'100%', boxShadow:'var(--shadow-lg)', display:'flex', flexDirection:'column', alignItems:'center', gap:14, fontFamily:'var(--font-body)' }}>
-        <img src={`../../assets/brand/badges/${window.BADGE_ART[(chapter.n-1) % window.BADGE_ART.length]}.png`} style={{ width:104, height:104, borderRadius:'50%' }} alt="" />
+        <img src={`assets/brand/badges/${window.BADGE_ART[(chapter.n-1) % window.BADGE_ART.length]}.png`} style={{ width:104, height:104, borderRadius:'50%' }} alt="" />
         <div style={{ fontFamily:'var(--font-display)', fontWeight:600, fontSize:19, color:'var(--color-text-primary)', textAlign:'center' }}>{info.name}</div>
         <div style={{ fontSize:13, fontWeight:600, color:'var(--color-text-muted)' }}>{chapter.n}-bob: {chapter.title}</div>
         <div style={{ fontSize:14, color:'var(--color-text-secondary)', textAlign:'center', lineHeight:1.5 }}>{info.desc}</div>
@@ -21,7 +21,7 @@ function BadgeStrip({ chapters, progress }) {
     <React.Fragment>
       <div style={{ display:'flex', gap:10, overflowX:'auto', paddingBottom:2 }}>
         {earned.map(c => (
-          <img key={c.n} onClick={() => setOpen(c)} src={`../../assets/brand/badges/${window.BADGE_ART[(c.n-1) % window.BADGE_ART.length]}.png`} title={c.title} style={{ flexShrink:0, width:44, height:44, borderRadius:'50%', cursor:'pointer' }} alt={c.title} />
+          <img key={c.n} onClick={() => setOpen(c)} src={`assets/brand/badges/${window.BADGE_ART[(c.n-1) % window.BADGE_ART.length]}.png`} title={c.title} style={{ flexShrink:0, width:44, height:44, borderRadius:'50%', cursor:'pointer' }} alt={c.title} />
         ))}
       </div>
       <BadgeDialog chapter={open} onClose={() => setOpen(null)} />
@@ -59,7 +59,7 @@ function JourneyScreen({ chapters, available, progress, onOpen, onLockedTap }) {
     <div style={{ display:'flex', flexDirection:'column', height:'100%', background:'var(--color-bg)', fontFamily:'var(--font-body)' }}>
       <div style={{ padding:'20px 16px 0' }}>
         <div style={{ position:'relative', background:'var(--color-primary)', borderRadius:'var(--radius-xl)', padding:'20px 20px 22px', overflow:'hidden', boxShadow:'var(--shadow-md)' }}>
-          <img src="../../assets/brand/ikat-corner.jpg" style={{ position:'absolute', top:-14, right:-14, width:74, height:74, borderRadius:'50%', opacity:0.35, objectFit:'cover' }} alt="" />
+          <img src="assets/brand/ikat-corner.jpg" style={{ position:'absolute', top:-14, right:-14, width:74, height:74, borderRadius:'50%', opacity:0.35, objectFit:'cover' }} alt="" />
           <div style={{ position:'relative' }}>
             <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:24, color:'var(--cream-50)' }}>Oila yoʻli</div>
             <div style={{ fontSize:13, color:'rgba(253,249,242,0.75)', marginTop:2 }}>{doneCount} / {available} bob · {pct}%</div>

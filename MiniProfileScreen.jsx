@@ -74,7 +74,7 @@ function MiniProfileScreen({ chapters, available, progress, streak, onOpenCouple
           {chapters.some(c => (progress[c.n]||{}).done) ? (
             <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:10 }}>
               {chapters.filter(c => (progress[c.n]||{}).done).map(c => (
-                <img key={c.n} onClick={() => setOpenBadge(c)} src={`../../assets/brand/badges/${window.BADGE_ART[(c.n-1) % window.BADGE_ART.length]}.png`} title={c.title} style={{ width:'100%', aspectRatio:'1', borderRadius:'50%', cursor:'pointer' }} alt={c.title} />
+                <img key={c.n} onClick={() => setOpenBadge(c)} src={`assets/brand/badges/${window.BADGE_ART[(c.n-1) % window.BADGE_ART.length]}.png`} title={c.title} style={{ width:'100%', aspectRatio:'1', borderRadius:'50%', cursor:'pointer' }} alt={c.title} />
               ))}
             </div>
           ) : (

@@ -34,7 +34,7 @@ function PerfectReveal({ chapterN }) {
         <div style={{ position:'absolute', inset:0, borderRadius:'50%', background:'var(--color-surface-sunken)', display:'flex', alignItems:'center', justifyContent:'center', backfaceVisibility:'hidden' }}>
           <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:32, color:'var(--color-text-muted)' }}>?</div>
         </div>
-        <img src={`../../assets/brand/badges/${art}.png`} style={{ position:'absolute', inset:0, width:'100%', height:'100%', borderRadius:'50%', boxShadow:'var(--shadow-lg)', backfaceVisibility:'hidden', transform:'rotateY(180deg)' }} alt="" />
+        <img src={`assets/brand/badges/${art}.png`} style={{ position:'absolute', inset:0, width:'100%', height:'100%', borderRadius:'50%', boxShadow:'var(--shadow-lg)', backfaceVisibility:'hidden', transform:'rotateY(180deg)' }} alt="" />
       </div>
     </div>
   );

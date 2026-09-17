@@ -151,7 +151,7 @@ function DashboardScreen({ chapters, available, progress, streak, onContinue }) 
         {lastDone ? (
           <div style={{ display:'flex', alignItems:'center', gap:12, background:'var(--color-surface)', border:'1px solid var(--color-border)', borderRadius:'var(--radius-md)', padding:'12px 14px' }}>
             <div style={{ width:32, height:32, borderRadius:'50%', flexShrink:0, overflow:'hidden' }}>
-              <img src={`../../assets/brand/badges/${window.BADGE_ART[(lastDone.n-1) % window.BADGE_ART.length]}.png`} style={{ width:'100%', height:'100%' }} alt="" />
+              <img src={`assets/brand/badges/${window.BADGE_ART[(lastDone.n-1) % window.BADGE_ART.length]}.png`} style={{ width:'100%', height:'100%' }} alt="" />
             </div>
             <div style={{ flex:1, minWidth:0 }}>
               <div style={{ fontSize:14, color:'var(--color-text-primary)', fontWeight:500 }}>{lastDone.title}</div>
