@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+:root{
+--font-display:'Playfair Display',"Noto Serif",Georgia,serif;
+--font-body:'IBM Plex Sans','Segoe UI',Arial,sans-serif;
+--text-xs:12px;
+--text-sm:14px;
+--text-base:16px;
+--text-lg:18px;
+--text-xl:22px;
+--text-2xl:28px;
+--text-3xl:34px;
+--text-4xl:44px;
+--leading-tight:1.15;
+--leading-snug:1.35;
+--leading-normal:1.55;
+--weight-regular:400;
+--weight-medium:500;
+--weight-semibold:600;
+--weight-bold:700;
+}

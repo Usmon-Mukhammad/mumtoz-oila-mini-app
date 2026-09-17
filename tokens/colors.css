@@ -1,0 +1,56 @@
+:root{
+/* maroon / oxblood — the book cover's primary leather color */
+--maroon-50:#FBF0F1;
+--maroon-100:#F2DCE0;
+--maroon-500:#A8394D;
+--maroon-600:#8C2A3C;
+--maroon-700:#74212F;
+--maroon-900:#4A1620;
+/* cream / ivory — neutral surfaces, never pure white/black */
+--cream-50:#FDF9F1;
+--cream-100:#F8EFDD;
+--cream-200:#F0E0C4;
+/* ink — warm near-black text */
+--ink-400:#8D7C70;
+--ink-600:#5C4B42;
+--ink-900:#2A1E1A;
+/* ikat accents — ceramic blue, gilded gold, brick terracotta */
+--ceramic-100:#D7E8ED;
+--ceramic-600:#2E6B86;
+--gold-100:#F5E7C3;
+--gold-600:#C0962E;
+--terracotta-100:#F2DBCA;
+--terracotta-600:#B14F2C;
+/* leaf green — sampled from the cover illustration, reused as success */
+--leaf-100:#DCEBD2;
+--leaf-600:#4C7A3D;
+/* danger */
+--danger-100:#F6D9D5;
+--danger-600:#B3261E;
+
+/* semantic aliases */
+--color-bg:var(--cream-50);
+--color-surface:#FFFFFF;
+--color-surface-sunken:var(--cream-100);
+--color-border:#E6D9C8;
+--color-border-strong:#D4C1A8;
+
+--color-primary:var(--maroon-700);
+--color-primary-tint:var(--maroon-100);
+--color-text-primary:var(--ink-900);
+--color-text-secondary:var(--ink-600);
+--color-text-muted:var(--ink-400);
+--color-text-on-primary:var(--cream-50);
+
+--color-accent-ceramic:var(--ceramic-600);
+--color-accent-ceramic-tint:var(--ceramic-100);
+--color-accent-gold:var(--gold-600);
+--color-accent-gold-tint:var(--gold-100);
+--color-accent-terracotta:var(--terracotta-600);
+--color-accent-terracotta-tint:var(--terracotta-100);
+
+--color-success:var(--leaf-600);
+--color-success-tint:var(--leaf-100);
+--color-danger:var(--danger-600);
+--color-danger-tint:var(--danger-100);
+}
