@@ -14,7 +14,7 @@ function WelcomeScreen({ user, onContinue }) {
   return (
     <div style={{ display:'flex', flexDirection:'column', height:'100%', background:'var(--color-bg)', fontFamily:'var(--font-body)', overflowY:'auto' }}>
       <div style={{ height:210, flexShrink:0, position:'relative', overflow:'hidden' }}>
-        <img src="assets/brand/book-cover-photo-raw.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover' }} />
+        <img src="assets/brand/pomegranate-motif.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover' }} />
         <div style={{ position:'absolute', inset:0, background:'linear-gradient(to bottom, rgba(253,249,242,0) 30%, rgba(253,249,242,0.6) 72%, #FDF9F2 96%)' }}></div>
       </div>
       <div style={{ padding:'0 24px', marginTop:4, textAlign:'center' }}>
