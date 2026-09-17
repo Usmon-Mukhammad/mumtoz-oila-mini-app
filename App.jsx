@@ -34,6 +34,7 @@ function DemoBar({ mode, onMode }) {
 function MiniApp() {
   const { BottomNav } = window.MumtozOilaDesignSystem_c96f62;
   const [mode, setMode] = React.useState('flow');
+  const [entryStage, setEntryStage] = React.useState('handshake');
   const [view, setView] = React.useState('home');
   const [tab, setTab] = React.useState(0);
   const [activeChapter, setActiveChapter] = React.useState(null);
@@ -46,6 +47,12 @@ function MiniApp() {
   const chapters = window.CHAPTERS;
   const available = window.CHAPTERS_AVAILABLE;
   const progressForMode = mode === 'empty' ? {} : progress;
+
+  React.useEffect(() => {
+    if (entryStage !== 'handshake') return;
+    const t = setTimeout(() => setEntryStage('welcome'), 1400);
+    return () => clearTimeout(t);
+  }, [entryStage]);
 
   function openChapter(c) {
     setActiveChapter(c);
@@ -79,6 +86,8 @@ function MiniApp() {
 
   let screen;
   if (mode === 'nosession') screen = <NoSessionScreen />;
+  else if (entryStage === 'handshake') screen = <HandshakeScreen />;
+  else if (entryStage === 'welcome') screen = <WelcomeScreen user={window.CURRENT_USER} onContinue={() => setEntryStage('app')} />;
   else if (view === 'lesson') screen = <LessonScreen chapter={activeChapter} retaking={!!(progressForMode[activeChapter.n]||{}).done} onBack={() => setView('home')} onStartQuiz={startQuiz} />;
   else if (view === 'quiz') screen = <QuizScreen chapter={activeChapter} batch={batch} onFinish={finishQuiz} onBack={() => setView('home')} />;
   else if (view === 'results') screen = <ResultsScreen chapter={activeChapter} results={results} syncState={syncState} onRetry={retryQuiz} onContinue={continueResults} onRetrySync={retrySync} />;

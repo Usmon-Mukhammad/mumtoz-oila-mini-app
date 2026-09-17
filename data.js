@@ -8,6 +8,7 @@ window.CHAPTERS = [
 {n:19,title:'Motam odobi'},{n:20,title:'Oilaviy anʼana'},{n:21,title:'Yakuniy sinov'},
 ];
 window.CHAPTERS_AVAILABLE = 6;
+window.CURRENT_USER = { initials: 'AM', name: 'Aziz Muhammadjonov', username: '@aziz_m' };
 window.BADGE_ART = ['badge-parenthood','badge-faith','badge-economics','badge-child-rearing','badge-hospitality','badge-marriage'];
 window.BADGE_INFO = [{ name:'Ota-onalik nishoni', desc:'Ota-ona maqomi va oilada yoʻnalish beruvchi boʻlish mavzusidagi bobni yakunlaganingiz uchun.' },
 { name:'Ibodat nishoni', desc:'Ruhiyat va ibodat orqali oilaviy barakani mustahkamlash mavzusidagi bobni yakunlaganingiz uchun.' },
